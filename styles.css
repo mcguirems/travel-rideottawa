@@ -1,1 +1,84 @@
-:root{--ink:#18201c;--paper:#f3f0e8;--lime:#d8ff4f;--fog:#c7d1cc}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}img{display:block}.hero{position:relative;min-height:100svh;overflow:hidden;color:#fff}.hero>img,.shade{position:absolute;inset:0;width:100%;height:100%}.hero>img{object-fit:cover}.shade{background:linear-gradient(180deg,#0a120f77,transparent 30%),linear-gradient(0deg,#0a120faa,transparent 55%)}.top{position:absolute;inset:0 0 auto;display:flex;justify-content:space-between;padding:1.6rem clamp(1.25rem,4vw,4.5rem);font-size:.72rem;font-weight:700;letter-spacing:.16em}.title{position:absolute;left:clamp(1.25rem,7vw,7rem);bottom:clamp(6rem,13vh,9rem);width:min(900px,88vw)}.eyebrow{margin:0 0 1.2rem;color:var(--lime);font-size:.75rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}.dark{color:#617765}.title h1{margin:0;font:400 clamp(5.2rem,17vw,13rem)/.69 Georgia,serif;letter-spacing:-.08em}.subtitle{font:italic clamp(1.2rem,2.2vw,2rem) Georgia,serif}.down{position:absolute;right:4vw;bottom:2rem;font-size:.7rem;font-weight:800;letter-spacing:.18em}.intro{display:grid;grid-template-columns:.8fr 1.8fr;gap:clamp(2rem,7vw,7rem);padding:clamp(6rem,12vw,12rem) clamp(1.4rem,8vw,9rem)}.mark{color:transparent;font:clamp(7rem,20vw,18rem)/.7 Georgia,serif;-webkit-text-stroke:1px #18201c33}.intro h2,.journal h2,.unknown h2{margin:0;font:400 clamp(3rem,6vw,6rem)/.98 Georgia,serif;letter-spacing:-.055em}.intro-copy p{max-width:660px;font-size:1.05rem;line-height:1.8}.intro-copy .lead{font:clamp(1.3rem,2.2vw,1.8rem)/1.5 Georgia,serif}.facts{grid-column:2;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #18201c38}.facts div{display:grid;padding-top:1.5rem}.facts strong{font:2.2rem Georgia,serif}.facts span,.journal span{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}.route{display:flex;gap:1rem;align-items:center;overflow:auto;padding:1.4rem 5vw;background:var(--lime);font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}.route i{width:2rem;height:1px;background:var(--ink)}.journal{display:grid;grid-template-columns:.8fr 1.4fr;gap:8vw;padding:9vw 8vw;background:#e2e7df}.journal ol{margin:0;padding:0;list-style:none;border-top:1px solid #18201c44}.journal li{display:grid;grid-template-columns:5rem 1fr auto;gap:1.5rem;align-items:center;padding:1.35rem 0;border-bottom:1px solid #18201c33}.journal li div{display:flex;flex-direction:column;gap:.35rem}.journal li strong{font:1.5rem Georgia,serif}.journal b{padding:.45rem .7rem;border:1px solid #18201c55;border-radius:2rem;font-size:.7rem;text-transform:uppercase}.chapters{background:#121a16;color:#fff}.chapters article{display:grid;grid-template-columns:1.65fr .7fr;min-height:80vh}.chapters article.reverse{grid-template-columns:.7fr 1.65fr}.chapters .reverse figure{grid-column:2}.chapters .reverse>div{grid-column:1;grid-row:1}.chapters figure{position:relative;margin:0;min-height:68vh}.chapters figure img{width:100%;height:100%;object-fit:cover}.chapters em{position:absolute;top:1.3rem;left:1.6rem;font:1.4rem Georgia,serif}.chapters article>div{display:flex;flex-direction:column;justify-content:center;padding:clamp(3rem,6vw,6rem)}.chapters h2{margin:0;font:400 clamp(3rem,5.5vw,5.8rem)/.95 Georgia,serif;letter-spacing:-.055em}.chapters article>div>p:not(.eyebrow){color:var(--fog);font:1.25rem/1.6 Georgia,serif}.chapters small{padding-top:1.2rem;border-top:1px solid #ffffff33;color:var(--lime);font-weight:800;letter-spacing:.11em}.unknown{display:grid;min-height:75vh;place-items:center;padding:5rem 1.5rem;background:linear-gradient(#131e18cc,#131e18dd),url("https://commons.wikimedia.org/wiki/Special:Redirect/file/On_the_beach_in_Campbell_River_(21611062969).jpg") center/cover;color:#fff;text-align:center}.unknown h2{font-size:clamp(7rem,20vw,17rem)}.unknown p:last-child{font:1.3rem/1.6 Georgia,serif}footer{display:grid;grid-template-columns:1fr 1fr;gap:2rem;padding:4rem 5vw;background:var(--lime);font-size:.8rem}footer details{grid-column:1/-1;border-top:1px solid #18201c44;padding-top:1rem}@media(max-width:760px){.top span{display:none}.title h1{font-size:28vw}.intro,.journal{grid-template-columns:1fr}.mark{display:none}.facts{grid-column:1}.journal li{grid-template-columns:4rem 1fr}.journal b{display:none}.chapters article,.chapters article.reverse{grid-template-columns:1fr}.chapters figure,.chapters .reverse figure{grid-column:1;grid-row:1;min-height:58vh}.chapters article>div,.chapters .reverse>div{grid-column:1;grid-row:2;min-height:48vh}footer{grid-template-columns:1fr}}
+:root{--ink:#18201c;--paper:#f3f0e8;--lime:#d8ff4f;--fog:#c7d1cc}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:1.5rem}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}
+a:focus-visible{outline:3px solid currentColor;outline-offset:5px}
+img{display:block}
+.hero{position:relative;min-height:100svh;overflow:hidden;color:#fff}
+.hero>img,.shade{position:absolute;inset:0;width:100%;height:100%}
+.hero>img{object-fit:cover}
+.shade{background:linear-gradient(180deg,#0a120f88,transparent 32%),linear-gradient(0deg,#0a120fbb,transparent 58%)}
+.top{position:absolute;inset:0 0 auto;display:flex;align-items:flex-start;justify-content:space-between;padding:1.6rem clamp(1.25rem,4vw,4.5rem);font-size:.75rem;font-weight:700;letter-spacing:.16em}
+.hero-brand img{width:clamp(9rem,16vw,14rem);height:auto}
+.title{position:absolute;left:clamp(1.25rem,7vw,7rem);bottom:clamp(2.25rem,6vh,4.5rem);width:min(780px,88vw)}
+.eyebrow{margin:0 0 1.2rem;color:var(--lime);font-size:.75rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+.dark{color:#617765}
+.title h1{margin:0;font:400 clamp(4.2rem,13.6vw,10.4rem)/.69 Georgia,serif;letter-spacing:-.08em}
+.subtitle{margin:.9rem 0 0;font:italic clamp(1.2rem,2.2vw,2rem) Georgia,serif}
+.down{display:inline-flex;align-items:center;gap:.65rem;margin-top:1.65rem;padding:.65rem 0;border-bottom:2px solid var(--lime);font-size:.9rem;font-weight:800;letter-spacing:.18em}
+.down span{font-size:1.4rem;line-height:.8}
+.intro{display:grid;grid-template-columns:.8fr 1.8fr;gap:clamp(2rem,7vw,7rem);padding:clamp(6rem,12vw,12rem) clamp(1.4rem,8vw,9rem)}
+.mark{color:transparent;font:clamp(7rem,20vw,18rem)/.7 Georgia,serif;-webkit-text-stroke:1px #18201c33}
+.intro h2,.journal h2,.unknown h2,.text-entry h2{margin:0;font:400 clamp(3rem,6vw,6rem)/.98 Georgia,serif;letter-spacing:-.055em}
+.intro-copy p{max-width:660px;font-size:1.05rem;line-height:1.8}
+.intro-copy .lead{font:clamp(1.3rem,2.2vw,1.8rem)/1.5 Georgia,serif}
+.facts{grid-column:2;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #18201c38}
+.facts div{display:grid;padding-top:1.5rem}
+.facts strong{font:2.2rem Georgia,serif}
+.facts span,.journal span{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase}
+.route{display:flex;gap:1rem;align-items:center;overflow:auto;padding:1.4rem 5vw;background:var(--lime);font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
+.route i{width:2rem;height:1px;background:var(--ink)}
+.journal{display:grid;grid-template-columns:.8fr 1.4fr;gap:8vw;padding:9vw 8vw;background:#e2e7df}
+.journal ol{margin:0;padding:0;list-style:none;border-top:1px solid #18201c44}
+.journal li{border-bottom:1px solid #18201c33}
+.journal li>a{display:grid;grid-template-columns:5rem 1fr auto;gap:1.5rem;align-items:center;padding:1.35rem 0;transition:padding .2s ease,color .2s ease}
+.journal li>a:hover{padding-left:.65rem;color:#4f6712}
+.journal li div{display:flex;flex-direction:column;gap:.35rem}
+.journal li strong{font:1.5rem Georgia,serif}
+.journal b{padding:.45rem .7rem;border:1px solid #18201c55;border-radius:2rem;font-size:.75rem;text-transform:uppercase}
+.text-entry{min-height:42vh;padding:clamp(4.5rem,7vw,7rem) clamp(1.4rem,8vw,9rem);background:#121a16;color:#fff;scroll-margin-top:1.5rem}
+.text-entry>div{width:min(920px,100%)}
+.text-entry-date time{color:var(--lime);font-size:.75rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+.text-entry>div:last-child{margin-top:clamp(2.5rem,5vw,4.5rem)}
+.text-entry>div:last-child>p{max-width:920px;color:var(--fog);font:1.25rem/1.6 Georgia,serif}
+.chapters{background:#121a16;color:#fff}
+.chapters article{display:grid;grid-template-columns:1.65fr .7fr;min-height:80vh;scroll-margin-top:1.5rem}
+.chapters article.reverse{grid-template-columns:.7fr 1.65fr}
+.chapters .reverse figure{grid-column:2}
+.chapters .reverse>div{grid-column:1;grid-row:1}
+.chapters figure{position:relative;margin:0;min-height:68vh}
+.chapters figure img{width:100%;height:100%;object-fit:cover}
+.chapters em{position:absolute;top:1.3rem;left:1.6rem;font:1.4rem Georgia,serif}
+.chapters article>div{display:flex;flex-direction:column;justify-content:center;padding:clamp(3rem,6vw,6rem)}
+.chapters h2{margin:0;font:400 clamp(3rem,5.5vw,5.8rem)/.95 Georgia,serif;letter-spacing:-.055em}
+.chapters article>div>p:not(.eyebrow){color:var(--fog);font:1.25rem/1.6 Georgia,serif}
+.chapters small{padding-top:1.2rem;border-top:1px solid #ffffff33;color:var(--lime);font-weight:800;letter-spacing:.11em}
+.unknown{display:grid;min-height:75vh;place-items:center;padding:5rem 1.5rem;background:linear-gradient(#131e18cc,#131e18dd),url("https://commons.wikimedia.org/wiki/Special:Redirect/file/On_the_beach_in_Campbell_River_(21611062969).jpg") center/cover;color:#fff;text-align:center;scroll-margin-top:1.5rem}
+.unknown h2{font-size:clamp(7rem,20vw,17rem)}
+.unknown p:last-child{font:1.3rem/1.6 Georgia,serif}
+footer{display:grid;grid-template-columns:1fr 1fr;gap:2rem;padding:4rem 5vw;background:var(--lime);font-size:.85rem}
+.footer-brand{display:flex;flex-direction:column;align-items:flex-start;gap:1rem}
+.footer-logo-link{display:block;width:min(16rem,65vw)}
+.footer-brand img{display:block;width:100%;height:auto;margin:0;transform:translateX(-7%)}
+.website-link{display:inline-flex;align-items:center;gap:.35rem;font-weight:800}
+.website-link:hover{opacity:.7}
+.external-link-icon{width:.65rem;height:.65rem;flex:none;align-self:center}
+.footer-meta{display:flex;flex-direction:column;align-items:flex-start;gap:.75rem}
+footer details{grid-column:1/-1;border-top:1px solid #18201c44;padding-top:1rem}
+footer details a{text-decoration:underline;text-underline-offset:.2rem}
+@media(max-width:760px){.top span{display:none}
+.hero-brand img{width:10rem}
+.title{bottom:2rem}
+.title h1{font-size:22.4vw}
+.down{margin-top:1.25rem}
+.intro,.journal{grid-template-columns:1fr}
+.mark{display:none}
+.facts{grid-column:1}
+.journal li>a{grid-template-columns:4rem 1fr}
+.journal b{display:none}
+.chapters article,.chapters article.reverse{grid-template-columns:1fr}
+.chapters figure,.chapters .reverse figure{grid-column:1;grid-row:1;min-height:58vh}
+.chapters article>div,.chapters .reverse>div{grid-column:1;grid-row:2;min-height:48vh}
+footer{grid-template-columns:1fr}
+}
