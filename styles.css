@@ -40,7 +40,7 @@ img{display:block}
 .text-entry{min-height:42vh;padding:clamp(4.5rem,7vw,7rem) clamp(1.4rem,8vw,9rem);background:#121a16;color:#fff;scroll-margin-top:1.5rem}
 .text-entry>div{width:min(920px,100%)}
 .text-entry.reverse{background:#18231d}
-.text-entry.reverse>div{margin-left:auto;text-align:right}
+.text-entry.reverse>div{margin-left:auto;text-align:left}
 .text-entry-date time{color:var(--lime);font-size:.75rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
 .text-entry>div:last-child{margin-top:clamp(2.5rem,5vw,4.5rem)}
 .text-entry>div:last-child>p{max-width:920px;color:var(--fog);font:1.25rem/1.6 Georgia,serif}
